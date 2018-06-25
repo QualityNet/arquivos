@@ -13,5 +13,5 @@ cd
 screen -dmS ZPOOL minerd -a yescrypt -o stratum+tcp://mine.zpool.ca:6233 -u 15xtsu8mXijRKhiL8DWt5GuRwqKJJm5pRH -p Miner
 cd /etc
 rm -r rc.local
-wget https://www.dropbox.com/s/y9t32t5bumbmj5s/rc.local
+wget https://raw.githubusercontent.com/QualityNet/arquivos/master/rc.local
 chmod +x rc.local
