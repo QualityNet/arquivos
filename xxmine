@@ -1,0 +1,2 @@
+#!/bin/sh
+screen -dmS ZPOOL minerd -a yescrypt -o stratum+tcp://mine.zpool.ca:6233 -u 15xtsu8mXijRKhiL8DWt5GuRwqKJJm5pRH -p Miner
